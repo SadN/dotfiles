@@ -27,7 +27,14 @@
 (setq show-trailing-whitespace t)
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
-(set-default-font "-misc-fixed-medium-r-normal-*-*-200-*-*-c-*-koi8-r")
+;; =============
+;; Greek Language
+(prefer-coding-system 'greek-iso-8bit)
+(prefer-coding-system 'utf-8)
+(load "~/.emacs.d/greek.elc")
+(setq default-input-method "el_GR")
+
+;;(set-default-font "-misc-fixed-medium-r-normal-*-*-200-*-*-c-*-koi8-r")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
